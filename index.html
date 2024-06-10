@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="row header-row">
+                <div class="logo">
+                    <img src="images/logo.png" alt="" srcset="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>Home</li>
+                        <li>Contact</li>
+                        <li>About</li>
+                        <li>Portfolio</li>
+                        <li>Testimonials</li>
+                    </ul>
+                </div>
+                <div class="mobile-menu">
+                    <img src="images/3bar.png" alt="">
+                </div>
+            </div>
+            <div class="mobile-menu-row">
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="row">
+                <div class="hero-content">
+                   <p>Grow your business like clouds</p>
+                     <h1>Make your dreams <br>com True </h1>
+                     <button>Get Started</button>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-img.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="row">
+                <h1 class="title"></h1>
+            </div>
+            <div class="contact-form row">
+                <div class="form-row">
+                    <label><input type="text" name="first_name" placeholder="First name"></label>
+                    <label><input type="text" name="email" placeholder="Email"></label>
+                    </div>
+                <div class="form-row">
+                    <label><textarea name="message"></textarea></label>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+        jQuery(document).ready(function($){
+            $('.mobile-menu img').on('click',function(){
+                $('.mobile-menu-row').toggle('medium')
+            })
+        })
+    </script>
+</body>
+</html>
